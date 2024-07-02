@@ -1,0 +1,2 @@
+Creare un controller che recupera una lista di persone nell'action Index, e i dettagli di una singola persona nell'action detail(int id)
+ad ogni persona può essere associata una lista di auto di cui la persona è proprietaria. Quindi nella pagina detail visualizzare oltre ai dettagli della persona, anche la lista di auto associate
