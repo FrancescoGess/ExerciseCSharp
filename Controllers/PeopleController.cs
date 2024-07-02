@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ExerciseCSharp.Models.Services.Application;
+using ExerciseCSharp.Models.ViewModels;
+
+
 // using AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -16,8 +20,8 @@ namespace ExerciseCSharp.Controllers
         public IActionResult Index()
         {
             var peopleService = new PeopleService();
-            List<Person> people = peopleService.GetPeople();
-            return View();
+            List<PeopleViewModel> people = peopleService.GetPeople();
+            return View(people);
         }
 
       
